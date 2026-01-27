@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="tic-tac-toe_logo.png">
+    <link rel="apple-touch-icon" href="tic-tac-toe_logo.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="about">
+            <h1 class="title">Tic-Tac-Toe</h1>
+            <p>Built by <b>Moksh Joshi</b></p>
+        </div>
+
+        <div class="switch-container">
+            <span class="switch-label">vs Computer</span>
+            <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider round"></span>
+            </label>
+            <span class="switch-label">2 Players</span>
+        </div>
+
+        <div class="status" id="status">Your Turn (X)</div>
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+            <div class="winning-line" id="winningLine"></div>
+        </div>
+        <button class="reset-btn" id="resetBtn">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
