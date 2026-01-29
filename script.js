@@ -21,6 +21,13 @@ const winningConditions = [
     [2, 4, 6]
 ];
 
+window.addEventListener('load', () => {
+    document.getElementById('loader').classList.add('fade-out');
+    setTimeout(() => {
+        document.getElementById('loader').remove();
+    }, 300);
+});
+
 function handleCellClick(clickedCellEvent) {
     const clickedCell = clickedCellEvent.target;
     const clickedCellIndex = parseInt(clickedCell.getAttribute('data-index'));
@@ -201,3 +208,4 @@ function handleRestartGame() {
 cells.forEach(cell => cell.addEventListener('click', handleCellClick));
 resetBtn.addEventListener('click', handleRestartGame);
 modeToggle.addEventListener('change', handleModeChange);
+
